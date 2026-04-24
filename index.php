@@ -5,10 +5,10 @@ $telefone = "";
 $mensagem = "";
 $tipoMensagem = "";
 
-$db_url = getenv("DATABASE_URL");
+$db_url = getenv("database_url");
 
 if (!$db_url) {
-    die("Erro: variável DATABASE_URL não encontrada.");
+    die("Erro: variável database_url não encontrada.");
 }
 
 $conn = pg_connect($db_url);
